@@ -1,0 +1,261 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870PX;
+    padding: 30px;
+    margin-top: 21px;
+}
+
+hr {
+    border: 1px solid #d1d1d1;
+    margin-bottom: 27px;
+}
+
+/* Nav styles */
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #562EFF;
+    margin: 0;
+    width: 100%;
+    height: 94px;
+}
+
+.navbar-idea {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row-reverse;
+    margin-left: 100px;
+
+}
+
+.nav-title {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.nav-icon {
+    width: 40.424px;
+    height: 51px;
+}
+
+.navbar-links ul {
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 1.5rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: gray;
+    border-radius: 5px;
+}
+
+
+/* Top Players styles */
+.top-players {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/*------------------- 
+     Top Blogs Styles
+ --------------------*/
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 26px;
+
+}
+
+.blog {
+    display: flex;
+}
+
+.blog .thumbnail img {
+    width: 224px;
+    height: 127px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* Courses Srtyles */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    border-radius: 5px;
+}
+
+.course .course-banner img {
+    width: 266px;
+    height: 141px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.filled {
+    color: #ffc014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+/*------------------ 
+    Media Queries
+ -------------------*/
+
+/* Mobile Devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .menu {
+        height: 150px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .navbar-idea {
+        position: relative;
+        margin-top: 40px;
+        padding-right: 40px;
+    }
+
+    .navbar-links {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+        grid-column-gap: 10px;
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+}
+
+/* Tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses,
+    .blogs {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 10px;
+        padding-left: 0px;
+        padding-right: px;
+        align-items: center;
+    }
+
+    .player {
+        padding-left: 80px;
+    }
+}
